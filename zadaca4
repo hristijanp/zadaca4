@@ -1,1 +1,23 @@
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int prv = 1;
+            int vtor = 1;
+            int tret = prv + vtor;
+
+            while (tret < 15)
+            {
+                prv = vtor;
+                vtor = tret;
+                tret = prv + vtor;
+                Console.WriteLine(tret - prv);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
 
